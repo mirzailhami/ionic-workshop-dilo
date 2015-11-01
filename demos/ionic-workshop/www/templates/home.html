@@ -1,0 +1,11 @@
+<ion-view title="Home">
+  <ion-content class="padding">
+    <div ui-sref="app.home-detail({id: x.id})" class="list" ng-repeat="x in data.posts">
+      <a class="item item-avatar" href="#">
+        <img src="{{x.thumbnail}}">
+        <h2>{{x.title}}</h2>
+        <p>{{x.date}}</p>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
